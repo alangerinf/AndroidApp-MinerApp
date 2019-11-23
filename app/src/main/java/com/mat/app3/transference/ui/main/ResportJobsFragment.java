@@ -10,18 +10,12 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.ibao.alanger.worktime.R;
-import com.ibao.alanger.worktime.adapters.RViewAdapterTransferListTrabajadores;
-import com.ibao.alanger.worktime.models.VO.internal.TareoDetalleVO;
-import com.ibao.alanger.worktime.views.transference.PageViewModel;
+import com.mat.app3.R;
 
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -32,14 +26,7 @@ import java.util.List;
  * create an instance of this fragment.
  */
 public class ResportJobsFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     private OnFragmentInteractionListener mListener;
 
@@ -47,36 +34,22 @@ public class ResportJobsFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ResportJobsFragment.
-     */
     // TODO: Rename and change types and number of parameters
-    public static ResportJobsFragment newInstance(String param1, String param2) {
+    public static ResportJobsFragment newInstance() {
         ResportJobsFragment fragment = new ResportJobsFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
 
     static View root;
     static RecyclerView flpa_rView;
-    static RViewAdapterTransferListTrabajadores adapter;
+   // static RViewAdapterTransferListTrabajadores adapter;
 
-    private PageViewModel pageViewModel;
+    //private PageViewModel pageViewModel;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
 
@@ -84,7 +57,7 @@ public class ResportJobsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        root =  inflater.inflate(R.layout.fragment_list_personal_added, container, false);
+        root =  inflater.inflate(R.layout.fragment_report_jobs, container, false);
 
         return root;
     }
@@ -93,6 +66,7 @@ public class ResportJobsFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        /*
         Log.d(TAG,"onStart");
         flpa_rView = getView().findViewById(R.id.flpa_rView);
         pageViewModel = ViewModelProviders.of(this).get(PageViewModel.class);
@@ -105,7 +79,7 @@ public class ResportJobsFragment extends Fragment {
                 flpa_rView.setAdapter(adapter);
             }
         });
-
+*/
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -147,7 +121,7 @@ public class ResportJobsFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
 
     }
-
+/*
     private ItemTouchHelper.SimpleCallback itemTouchHelperCallBack = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT| ItemTouchHelper.LEFT) {
         @Override
         public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
@@ -168,4 +142,6 @@ public class ResportJobsFragment extends Fragment {
             snackbar.show();
         }
     };
+*/
 }
+

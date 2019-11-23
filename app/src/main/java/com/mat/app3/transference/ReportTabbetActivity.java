@@ -13,39 +13,32 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
-import com.ibao.alanger.worktime.R;
-import com.ibao.alanger.worktime.models.DAO.TareoDetalleDAO;
-import com.ibao.alanger.worktime.models.VO.internal.TareoDetalleVO;
-import com.ibao.alanger.worktime.models.VO.internal.TareoVO;
-import com.ibao.alanger.worktime.views.transference.ui.main.AddPersonalFragment;
-import com.ibao.alanger.worktime.views.transference.ui.main.ListPersonalAddedFragment;
-import com.ibao.alanger.worktime.views.transference.ui.main.SectionsPagerAdapter;
+
+import com.mat.app3.R;
+import com.mat.app3.database.entities.Report;
+import com.mat.app3.models.ReportTestModel;
+import com.mat.app3.transference.ui.main.ReporBasicDataFragment;
+import com.mat.app3.transference.ui.main.ResportJobsFragment;
+import com.mat.app3.transference.ui.main.SectionsPagerAdapter;
 
 import java.util.ArrayList;
-import java.util.List;
+
 import java.util.Objects;
 
 public class ReportTabbetActivity extends AppCompatActivity
         implements
-        AddPersonalFragment.OnFragmentInteractionListener,
-        ListPersonalAddedFragment.OnFragmentInteractionListener {
+        ReporBasicDataFragment.OnFragmentInteractionListener,
+        ResportJobsFragment.OnFragmentInteractionListener {
 
     private static FloatingActionButton fab;
-    private static CustomViewPager viewPager;
+    private static ViewPager viewPager;
     private static TabLayout tabs;
     private static SectionsPagerAdapter sectionsPagerAdapter;
     ArrayList<String> tittles = new ArrayList<>();
-
-    public static final String EXTRA_MODE= "extra_mode";
-
-    public static final String EXTRA_MODE_ADD_TRABAJADOR="ADD TRABAJADOR";
-    public static final String EXTRA_TAREOVO="TAREOVO";
-
-    public static String MY_EXTRA_MODE;
-    public static TareoVO TAREO_RETURN;
 
     private static String TAG = ReportTabbetActivity.class.getSimpleName();
 
@@ -58,16 +51,9 @@ public class ReportTabbetActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-
-
         Bundle b = getIntent().getExtras();
 
-        MY_EXTRA_MODE = b.getString(EXTRA_MODE);
 
-        if(MY_EXTRA_MODE.equals(EXTRA_MODE_ADD_TRABAJADOR)){
-            TAREO_RETURN = (TareoVO) b.getSerializable(EXTRA_TAREOVO);
-            Log.d(TAG,""+ TAREO_RETURN);
-        }
 
         declare();
         events();
@@ -75,21 +61,8 @@ public class ReportTabbetActivity extends AppCompatActivity
 
     private void events() {
         fab.setOnClickListener(v->{
-            if(viewPager.getCurrentItem()!=1){//si esta en el segundo fragment
-                viewPager.setCurrentItem(1);
-            }else {
-                Intent returnIntent = new Intent();
-                for(TareoDetalleVO tad :PageViewModel.getMutable()){
-                    int i =(int) new TareoDetalleDAO(getBaseContext()).insert(TAREO_RETURN.getId(),tad.getTrabajadorVO().getDni(),tad.getTimeStart());
-                            tad.setId(i);
-                            tad.setIdTareo(TAREO_RETURN.getId());
-                }
-                TAREO_RETURN.getTareoDetalleVOList().addAll(PageViewModel.getMutable());
-                if(MY_EXTRA_MODE.equals(EXTRA_MODE_ADD_TRABAJADOR))
-                returnIntent.putExtra("TAREOVO", TAREO_RETURN);
-                setResult(RESULT_OK,returnIntent);
-                finish();
-            }
+
+
         });
     }
 
@@ -98,9 +71,9 @@ public class ReportTabbetActivity extends AppCompatActivity
         tittles.add(getString(R.string.tab_text_1));
         tittles.add(getString(R.string.tab_text_2));
         PageViewModel.init();
-        List <TareoDetalleVO> tareoDetalleVOList = new ArrayList<>();
-        PageViewModel.set(tareoDetalleVOList);
-        sectionsPagerAdapter = new SectionsPagerAdapter( getSupportFragmentManager(),tittles,MY_EXTRA_MODE, TAREO_RETURN);
+        ReportTestModel reportTestModel = new ReportTestModel();
+        PageViewModel.set(reportTestModel);
+        sectionsPagerAdapter = new SectionsPagerAdapter( getSupportFragmentManager(),tittles);
 
         fab = findViewById(R.id.fab);
         viewPager = findViewById(R.id.view_pager);

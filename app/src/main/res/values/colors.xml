@@ -15,4 +15,7 @@
 
     <color name="colorGooglePlus">#DD4B39</color>
     <color name="colorGooglePlusDark">#B92D21</color>
+
+
+    <color name="black">#000</color>
 </resources>

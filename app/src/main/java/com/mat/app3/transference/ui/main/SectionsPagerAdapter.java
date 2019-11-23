@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.ibao.alanger.worktime.models.VO.internal.TareoVO;
-import com.ibao.alanger.worktime.views.transference.TabbetActivity;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -25,18 +23,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     private List<String> TAB_TITLES;
 
-    public static final String EXTRA_MODE_ADD_TRABAJADOR= TabbetActivity.EXTRA_MODE_ADD_TRABAJADOR;
-    public static final String EXTRA_TAREOVO=TabbetActivity.EXTRA_TAREOVO;
 
-    public static String MY_EXTRA_MODE;
 
-    TareoVO TAREOVO;
-
-    public SectionsPagerAdapter(FragmentManager fm, ArrayList<String> tabHeader, String MODE, TareoVO tareo) {
+    public SectionsPagerAdapter(FragmentManager fm, ArrayList<String> tabHeader) {
         super(fm);
         this.TAB_TITLES = tabHeader;
-        this.MY_EXTRA_MODE=MODE;
-        this.TAREOVO = tareo;
     }
 
     @Override
@@ -47,9 +38,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Fragment fragment= null;
 
         if(position==0){
-           fragment= ReporBasicDataFragment.newInstance(MY_EXTRA_MODE,TAREOVO);
+           fragment= ReporBasicDataFragment.newInstance();
         }else {
-            fragment= ResportJobsFragment.newInstance("","");
+            fragment= ResportJobsFragment.newInstance();
         }
 
         return fragment;

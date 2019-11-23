@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="@dimen/login_space"
+            android:layout_marginEnd="@dimen/login_space"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Email address *"
+                >
+
+            </EditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Orden de trabajo ( OT )"
+                >
+
+            </EditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Jefe de turno *"
+                >
+
+            </EditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Nombre de operador: *"
+                >
+
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Fecha :"
+                    android:textSize="@dimen/textsize_primary"
+                    android:textColor="@color/colorSecondaryText"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="Sin Editar"
+                    android:textSize="@dimen/textsize_primary"
+                    android:textColor="@color/colorSecondaryText"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/ButtonPrimaryDark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="Editar"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Número de equipo: *"
+                >
+            </EditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_rounded"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/array_turno"
+                    android:spinnerMode="dialog"
+                    android:paddingLeft="@dimen/login_edit_text_space"
+                    android:paddingRight="@dimen/login_edit_text_space"
+                    >
+                </Spinner>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Petroleo"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Horometro/Km inicial *"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/divider_margin"
+                android:layout_marginBottom="@dimen/divider_margin"
+                android:background="@color/colorDivider" />
+
+            <EditText
+                style="@style/EditTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_edit_text_height"
+                android:hint="Horometro/ final"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include layout="@layout/layout_scroll_modal"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

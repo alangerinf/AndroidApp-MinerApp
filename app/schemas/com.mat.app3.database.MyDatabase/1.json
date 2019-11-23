@@ -1,0 +1,88 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "2dbc83bf74869d1227a167da15e2b401",
+    "entities": [
+      {
+        "tableName": "report",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`reportId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `email` TEXT NOT NULL, `ot` TEXT NOT NULL, `boss` TEXT NOT NULL, `opName` TEXT NOT NULL, `date` TEXT NOT NULL, `turn` TEXT NOT NULL, `Petroleum` REAL NOT NULL, `horometerStart` REAL NOT NULL, `horometerEnd` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "reportId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ot",
+            "columnName": "ot",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "boss",
+            "columnName": "boss",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "opName",
+            "columnName": "opName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "turn",
+            "columnName": "turn",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Petroleum",
+            "columnName": "Petroleum",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "horometerStart",
+            "columnName": "horometerStart",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "horometerEnd",
+            "columnName": "horometerEnd",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "reportId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2dbc83bf74869d1227a167da15e2b401')"
+    ]
+  }
+}

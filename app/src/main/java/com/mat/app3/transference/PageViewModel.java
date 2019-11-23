@@ -6,45 +6,38 @@ import androidx.lifecycle.Transformations;
 import androidx.lifecycle.ViewModel;
 
 
-import java.util.List;
+import com.mat.app3.models.ReportTestModel;
 
 public class PageViewModel extends ViewModel {
 
-    private static MutableLiveData<List<TareoDetalleVO>> listMutableLiveData;
-    private LiveData<List<TareoDetalleVO>> listLiveData = Transformations.map(listMutableLiveData, input -> input);
+    private static MutableLiveData<ReportTestModel> listMutableLiveData;
+    private LiveData<ReportTestModel> listLiveData = Transformations.map(listMutableLiveData, input -> input);
 
-    public static void set(List<TareoDetalleVO> index) {
+    public static void set(ReportTestModel index) {
         listMutableLiveData.setValue(index);
     }
-    public static void addTrabajador(int index,TareoDetalleVO tareoDetalleVO){
-        listMutableLiveData.getValue().add(index,tareoDetalleVO);
+
+    public static void addJob(int index, ReportTestModel.Job tareoDetalleVO){
+        listMutableLiveData.getValue().getJobs().add(index,tareoDetalleVO);
         listMutableLiveData.setValue(listMutableLiveData.getValue());
     }
 
-    public static void addTrabajador(TareoDetalleVO tareoDetalleVO){
-        listMutableLiveData.getValue().add(tareoDetalleVO);
+    public static void addJob(ReportTestModel.Job job){
+        listMutableLiveData.getValue().getJobs().add(job);
         listMutableLiveData.setValue(listMutableLiveData.getValue());
     }
-    public static void removeTrabajador(TareoDetalleVO tareoDetalleVO){
-
-        listMutableLiveData.getValue().remove(tareoDetalleVO);
+    public static void removeTrabajador(ReportTestModel.Job job){
+        listMutableLiveData.getValue().getJobs().remove(job);
         listMutableLiveData.setValue(listMutableLiveData.getValue());
-    }
-    public static TareoDetalleVO removeTrabajador(int i){
-        TareoDetalleVO tareoDetalleVO = listMutableLiveData.getValue().remove(i);
-        listMutableLiveData.setValue(listMutableLiveData.getValue());
-        return tareoDetalleVO;
     }
 
-    public LiveData<List<TareoDetalleVO>> get() {
+    public LiveData<ReportTestModel> get() {
         return listLiveData;
     }
 
-    public static List<TareoDetalleVO> getMutable(){
-
+    public static ReportTestModel getMutable(){
         return  listMutableLiveData.getValue();
     }
-
 
     public static void init(){
         listMutableLiveData = new MutableLiveData<>();
