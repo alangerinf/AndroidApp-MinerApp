@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+<!--
+
+
+        <item name="android:windowNoTitle">true</item>
+    -->
+    </style>
+
+    <style name="NoPreview" parent="AppTheme">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EditTextDark" parent="Widget.AppCompat.EditText">
+        <item name="android:editTextColor">@color/colorPrimaryText</item>
+        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="android:textSize">@dimen/textsize_primary</item>
+        <item name="android:paddingLeft">@dimen/login_edit_text_space</item>
+        <item name="android:paddingRight">@dimen/login_edit_text_space</item>
+        <item name="android:background">@drawable/edittext_rounded</item>
+    </style>
+
+
+    <style name="ButtonPrimaryDark" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/login_text_xl_size</item>
+        <item name="android:background">@drawable/button_ripple_bg</item>
+    </style>
+
+    <style name="ButtonAccent" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/textsize_secondary</item>
+        <item name="android:background">@drawable/button_ripple_accent</item>
+    </style>
+
+
+
+</resources>

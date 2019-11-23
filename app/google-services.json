@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "90788803126",
+    "firebase_url": "https://minerapp-17d5c.firebaseio.com",
+    "project_id": "minerapp-17d5c",
+    "storage_bucket": "minerapp-17d5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90788803126:android:c062abf48def2a7b86de97",
+        "android_client_info": {
+          "package_name": "com.mat.app3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90788803126-9eiluq4hinpm6eo0mjlt0ooks62teuga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mat.app3",
+            "certificate_hash": "f0655e4d1f86733cb686a9849acc779fb7bef784"
+          }
+        },
+        {
+          "client_id": "90788803126-l6fvb4hhcdut788iiife05rr01gpb34t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANN1v4sogFazwTB2nbw1dBPxbV0jh7VLQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90788803126-l6fvb4hhcdut788iiife05rr01gpb34t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
