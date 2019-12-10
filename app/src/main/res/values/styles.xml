@@ -42,6 +42,11 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
 
+    <style name="TextViewPrimary" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/textsize_primary</item>
+    </style>
+
     <style name="EditTextDark" parent="Widget.AppCompat.EditText">
         <item name="android:editTextColor">@color/colorPrimaryText</item>
         <item name="android:textColorHint">@color/colorSecondaryText</item>

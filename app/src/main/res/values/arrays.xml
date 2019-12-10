@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string-array name="array_turno">
         <item>Seleccione un Turno</item>
         <item>DIA</item>
         <item>NOCHE</item>
     </string-array>
+
+    <string-array name="array_trabajos">
+        <item>Charla de seguridad</item>
+        <item>Revision de equipo</item>
+        <item>Colación</item>
+        <item>Reserva</item>
+        <item>Petroleo</item>
+        <item>Mantención</item>
+        <item>Reparación</item>
+        <item>Cambio de sitio</item>
+        <item>Espera lugar de trabajo</item>
+        <item>Entrada y salida de turno</item>
+        <item>Tronadura</item>
+        <item>Disponible sin operador</item>
+        <item>Condiciones climaticas</item>
+        <item>Otras demaras mecanicas</item>
+    </string-array>
+
 </resources>

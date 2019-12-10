@@ -8,7 +8,6 @@ import androidx.room.RoomDatabase;
 
 import com.mat.app3.database.Dao.ReportDao;
 import com.mat.app3.database.entities.Report;
-import com.mat.app3.database.entities.ReportJobs;
 
 @Database(
         entities = {
@@ -21,12 +20,14 @@ public abstract class MyDatabase extends RoomDatabase {
 
     public abstract ReportDao reportDao();
 
+    public final static String dbName="database.db";
+
     public static MyDatabase getInstance(Context context) {
         if (INSTANCE == null) {
             synchronized (MyDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            MyDatabase.class, "database.db")
+                            MyDatabase.class, dbName)
                             .build();
                 }
             }

@@ -17,6 +17,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tab_text_1">Basic Data</string>
     <string name="tab_text_2">Jobs</string>
+    <string name="sin_editar">Sin Editar</string>
+    <string name="hasta">HASTA</string>
+    <string name="desde">DESDE</string>
 
 
 </resources>

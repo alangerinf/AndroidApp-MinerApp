@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "2dbc83bf74869d1227a167da15e2b401",
+    "identityHash": "bf686d4b27586126be064d2651c5a82a",
     "entities": [
       {
         "tableName": "report",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`reportId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `email` TEXT NOT NULL, `ot` TEXT NOT NULL, `boss` TEXT NOT NULL, `opName` TEXT NOT NULL, `date` TEXT NOT NULL, `turn` TEXT NOT NULL, `Petroleum` REAL NOT NULL, `horometerStart` REAL NOT NULL, `horometerEnd` REAL NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`reportId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `email` TEXT NOT NULL, `ot` TEXT NOT NULL, `boss` TEXT NOT NULL, `opName` TEXT NOT NULL, `date` TEXT NOT NULL, `numEquipo` TEXT NOT NULL, `turn` TEXT NOT NULL, `Petroleum` REAL NOT NULL, `horometerStart` REAL NOT NULL, `horometerEnd` REAL NOT NULL, `trab1` TEXT NOT NULL, `trab1_hStart` TEXT NOT NULL, `trab1_hEnd` TEXT NOT NULL, `trab1_detail` TEXT NOT NULL, `trab2` TEXT NOT NULL, `trab2_hStart` TEXT NOT NULL, `trab2_hEnd` TEXT NOT NULL, `trab2_detail` TEXT NOT NULL, `trab3` TEXT NOT NULL, `trab3_hStart` TEXT NOT NULL, `trab3_hEnd` TEXT NOT NULL, `trab3_detail` TEXT NOT NULL, `trab4` TEXT NOT NULL, `trab4_hStart` TEXT NOT NULL, `trab4_hEnd` TEXT NOT NULL, `trab4_detail` TEXT NOT NULL, `trab5` TEXT NOT NULL, `trab5_hStart` TEXT NOT NULL, `trab5_hEnd` TEXT NOT NULL, `trab5_detail` TEXT NOT NULL, `trab6` TEXT NOT NULL, `trab6_hStart` TEXT NOT NULL, `trab6_hEnd` TEXT NOT NULL, `trab6_detail` TEXT NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
@@ -45,6 +45,12 @@
             "notNull": true
           },
           {
+            "fieldPath": "numEquipo",
+            "columnName": "numEquipo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
             "fieldPath": "turn",
             "columnName": "turn",
             "affinity": "TEXT",
@@ -67,6 +73,150 @@
             "columnName": "horometerEnd",
             "affinity": "REAL",
             "notNull": true
+          },
+          {
+            "fieldPath": "trab1",
+            "columnName": "trab1",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab1_hStart",
+            "columnName": "trab1_hStart",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab1_hEnd",
+            "columnName": "trab1_hEnd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab1_detail",
+            "columnName": "trab1_detail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab2",
+            "columnName": "trab2",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab2_hStart",
+            "columnName": "trab2_hStart",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab2_hEnd",
+            "columnName": "trab2_hEnd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab2_detail",
+            "columnName": "trab2_detail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab3",
+            "columnName": "trab3",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab3_hStart",
+            "columnName": "trab3_hStart",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab3_hEnd",
+            "columnName": "trab3_hEnd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab3_detail",
+            "columnName": "trab3_detail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab4",
+            "columnName": "trab4",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab4_hStart",
+            "columnName": "trab4_hStart",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab4_hEnd",
+            "columnName": "trab4_hEnd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab4_detail",
+            "columnName": "trab4_detail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab5",
+            "columnName": "trab5",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab5_hStart",
+            "columnName": "trab5_hStart",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab5_hEnd",
+            "columnName": "trab5_hEnd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab5_detail",
+            "columnName": "trab5_detail",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab6",
+            "columnName": "trab6",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab6_hStart",
+            "columnName": "trab6_hStart",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab6_hEnd",
+            "columnName": "trab6_hEnd",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trab6_detail",
+            "columnName": "trab6_detail",
+            "affinity": "TEXT",
+            "notNull": true
           }
         ],
         "primaryKey": {
@@ -82,7 +232,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2dbc83bf74869d1227a167da15e2b401')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bf686d4b27586126be064d2651c5a82a')"
     ]
   }
 }

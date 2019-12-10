@@ -38,7 +38,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         Fragment fragment= null;
 
         if(position==0){
-           fragment= ReporBasicDataFragment.newInstance();
+           fragment= ReporBasicDataFragment.Companion.newInstance();
         }else {
             fragment= ResportJobsFragment.newInstance();
         }

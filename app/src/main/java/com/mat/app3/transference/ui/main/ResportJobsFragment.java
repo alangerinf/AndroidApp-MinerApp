@@ -121,27 +121,6 @@ public class ResportJobsFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
 
     }
-/*
-    private ItemTouchHelper.SimpleCallback itemTouchHelperCallBack = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT| ItemTouchHelper.LEFT) {
-        @Override
-        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
-            return false;
-        }
 
-        @Override
-        public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
-            final int index = viewHolder.getAdapterPosition();//esto tiene q ir arriba porq la programacion reaccitva elimina de inmediato en el recycler view sin actualizar
-            final TareoDetalleVO item = PageViewModel.removeTrabajador(viewHolder.getAdapterPosition());
-            Snackbar snackbar = Snackbar.make(root,"Se Borró una Labor"+index, Snackbar.LENGTH_LONG);
-            snackbar.setAction("Deshacer", new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    PageViewModel.addTrabajador(index,item);
-                }
-            });
-            snackbar.show();
-        }
-    };
-*/
 }
 

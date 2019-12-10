@@ -37,6 +37,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array array_trabajos
 array array_turno
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1109,6 +1110,7 @@ drawable googleg_standard_color_18
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_list_add_white_24dp
+drawable ic_mode_comment_black_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1205,7 +1207,9 @@ id beginning
 id blocking
 id bottom
 id bottom_app_bar
-id button
+id btnDateEnd
+id btnDateStart
+id btn_aceptar
 id buttonCreateAccount
 id buttonForgot
 id buttonGoLogin
@@ -1231,6 +1235,7 @@ id coordinator
 id custom
 id customPanel
 id dark
+id datePicker
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1242,6 +1247,9 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id div1
+id div2
+id divider
 id editTextConfirmPassword
 id editTextEmail
 id editTextPassword
@@ -1253,7 +1261,16 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fBasic_eTextBoss
+id fBasic_eTextEmail
+id fBasic_eTextNumEquipo
+id fBasic_eTextOT
+id fBasic_eTextOpName
+id fBasic_spnTurno
 id fab
+id fabComent
+id fbasic_btnData
+id fbasic_tViewDate
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1362,6 +1379,9 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
+id tViewDateEnd
+id tViewDateStart
+id tViewTittle
 id tabMode
 id tabs
 id tag_accessibility_actions
@@ -1378,7 +1398,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView2
+id textView5
 id textViewForgotPassword
 id text_input_password_toggle
 id textinput_counter
@@ -1471,6 +1491,7 @@ layout activity_sing_up
 layout activity_tabbet
 layout app_bar_tabbet
 layout custom_dialog
+layout datepicker
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1487,6 +1508,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_report_basics
 layout fragment_report_jobs
+layout fragment_report_jobs_item
 layout layout_scroll_modal
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1563,6 +1585,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
+string desde
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1571,6 +1594,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hasta
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string login_confirm_password
@@ -1591,6 +1615,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string sin_editar
 string status_bar_notification_info_overflow
 string tab_text_1
 string tab_text_2
@@ -1918,6 +1943,7 @@ style TextAppearance_MaterialComponents_Tab
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style TextViewPrimary
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight

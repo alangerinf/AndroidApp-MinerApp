@@ -32,9 +32,9 @@ public final class MyDatabase_Impl extends MyDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `report` (`reportId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `email` TEXT NOT NULL, `ot` TEXT NOT NULL, `boss` TEXT NOT NULL, `opName` TEXT NOT NULL, `date` TEXT NOT NULL, `turn` TEXT NOT NULL, `Petroleum` REAL NOT NULL, `horometerStart` REAL NOT NULL, `horometerEnd` REAL NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `report` (`reportId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `email` TEXT NOT NULL, `ot` TEXT NOT NULL, `boss` TEXT NOT NULL, `opName` TEXT NOT NULL, `date` TEXT NOT NULL, `numEquipo` TEXT NOT NULL, `turn` TEXT NOT NULL, `Petroleum` REAL NOT NULL, `horometerStart` REAL NOT NULL, `horometerEnd` REAL NOT NULL, `trab1` TEXT NOT NULL, `trab1_hStart` TEXT NOT NULL, `trab1_hEnd` TEXT NOT NULL, `trab1_detail` TEXT NOT NULL, `trab2` TEXT NOT NULL, `trab2_hStart` TEXT NOT NULL, `trab2_hEnd` TEXT NOT NULL, `trab2_detail` TEXT NOT NULL, `trab3` TEXT NOT NULL, `trab3_hStart` TEXT NOT NULL, `trab3_hEnd` TEXT NOT NULL, `trab3_detail` TEXT NOT NULL, `trab4` TEXT NOT NULL, `trab4_hStart` TEXT NOT NULL, `trab4_hEnd` TEXT NOT NULL, `trab4_detail` TEXT NOT NULL, `trab5` TEXT NOT NULL, `trab5_hStart` TEXT NOT NULL, `trab5_hEnd` TEXT NOT NULL, `trab5_detail` TEXT NOT NULL, `trab6` TEXT NOT NULL, `trab6_hStart` TEXT NOT NULL, `trab6_hEnd` TEXT NOT NULL, `trab6_detail` TEXT NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2dbc83bf74869d1227a167da15e2b401')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bf686d4b27586126be064d2651c5a82a')");
       }
 
       @Override
@@ -78,17 +78,42 @@ public final class MyDatabase_Impl extends MyDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsReport = new HashMap<String, TableInfo.Column>(10);
+        final HashMap<String, TableInfo.Column> _columnsReport = new HashMap<String, TableInfo.Column>(35);
         _columnsReport.put("reportId", new TableInfo.Column("reportId", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("email", new TableInfo.Column("email", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("ot", new TableInfo.Column("ot", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("boss", new TableInfo.Column("boss", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("opName", new TableInfo.Column("opName", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("date", new TableInfo.Column("date", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("numEquipo", new TableInfo.Column("numEquipo", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("turn", new TableInfo.Column("turn", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("Petroleum", new TableInfo.Column("Petroleum", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("horometerStart", new TableInfo.Column("horometerStart", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsReport.put("horometerEnd", new TableInfo.Column("horometerEnd", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab1", new TableInfo.Column("trab1", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab1_hStart", new TableInfo.Column("trab1_hStart", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab1_hEnd", new TableInfo.Column("trab1_hEnd", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab1_detail", new TableInfo.Column("trab1_detail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab2", new TableInfo.Column("trab2", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab2_hStart", new TableInfo.Column("trab2_hStart", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab2_hEnd", new TableInfo.Column("trab2_hEnd", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab2_detail", new TableInfo.Column("trab2_detail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab3", new TableInfo.Column("trab3", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab3_hStart", new TableInfo.Column("trab3_hStart", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab3_hEnd", new TableInfo.Column("trab3_hEnd", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab3_detail", new TableInfo.Column("trab3_detail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab4", new TableInfo.Column("trab4", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab4_hStart", new TableInfo.Column("trab4_hStart", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab4_hEnd", new TableInfo.Column("trab4_hEnd", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab4_detail", new TableInfo.Column("trab4_detail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab5", new TableInfo.Column("trab5", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab5_hStart", new TableInfo.Column("trab5_hStart", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab5_hEnd", new TableInfo.Column("trab5_hEnd", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab5_detail", new TableInfo.Column("trab5_detail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab6", new TableInfo.Column("trab6", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab6_hStart", new TableInfo.Column("trab6_hStart", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab6_hEnd", new TableInfo.Column("trab6_hEnd", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsReport.put("trab6_detail", new TableInfo.Column("trab6_detail", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysReport = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesReport = new HashSet<TableInfo.Index>(0);
         final TableInfo _infoReport = new TableInfo("report", _columnsReport, _foreignKeysReport, _indicesReport);
@@ -100,7 +125,7 @@ public final class MyDatabase_Impl extends MyDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "2dbc83bf74869d1227a167da15e2b401", "fbc757bf372a90738cc5686c53884d0c");
+    }, "bf686d4b27586126be064d2651c5a82a", "c8e4fa62fb014e9e0ab0b981c29f44b8");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

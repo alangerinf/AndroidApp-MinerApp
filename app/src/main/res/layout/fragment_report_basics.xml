@@ -23,11 +23,11 @@
             >
 
             <EditText
+                android:id="@+id/fBasic_eTextEmail"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Email address *"
-                >
+                android:hint="Email address *">
 
             </EditText>
             <View
@@ -38,11 +38,11 @@
                 android:background="@color/colorDivider" />
 
             <EditText
+                android:id="@+id/fBasic_eTextOT"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Orden de trabajo ( OT )"
-                >
+                android:hint="Orden de trabajo ( OT )">
 
             </EditText>
             <View
@@ -53,11 +53,11 @@
                 android:background="@color/colorDivider" />
 
             <EditText
+                android:id="@+id/fBasic_eTextBoss"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Jefe de turno *"
-                >
+                android:hint="Jefe de turno *">
 
             </EditText>
             <View
@@ -69,11 +69,11 @@
 
 
             <EditText
+                android:id="@+id/fBasic_eTextOpName"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Nombre de operador: *"
-                >
+                android:hint="Nombre de operador: *">
 
             </EditText>
 
@@ -105,7 +105,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/fbasic_tViewDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -119,7 +119,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/fbasic_btnData"
                     style="@style/ButtonPrimaryDark"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                     android:text="Editar"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/fbasic_tViewDate"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -142,12 +142,11 @@
                 android:background="@color/colorDivider" />
 
             <EditText
+                android:id="@+id/fBasic_eTextNumEquipo"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Número de equipo: *"
-                >
-            </EditText>
+                android:hint="Número de equipo: *"></EditText>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -160,15 +159,15 @@
                 android:layout_height="50dp"
                 android:background="@drawable/edittext_rounded"
                 >
+
                 <Spinner
+                    android:id="@+id/fBasic_spnTurno"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:entries="@array/array_turno"
-                    android:spinnerMode="dialog"
                     android:paddingLeft="@dimen/login_edit_text_space"
                     android:paddingRight="@dimen/login_edit_text_space"
-                    >
-                </Spinner>
+                    android:spinnerMode="dialog"></Spinner>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

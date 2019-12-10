@@ -1,10 +1,6 @@
 package com.mat.app3.database.Dao
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Update
-import androidx.room.OnConflictStrategy
+import androidx.room.*
 import com.mat.app3.database.entities.Report
 
 
@@ -18,4 +14,8 @@ interface ReportDao {
 
     @Delete
     fun delete(vararg report: Report)
+
+
+    @Query( "SELECT * FROM Report")
+    fun selectAll() : List<Report>
 }
