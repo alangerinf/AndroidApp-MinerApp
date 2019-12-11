@@ -6,7 +6,7 @@
     android:fitsSystemWindows="true"
     android:background="@color/black"
     android:layout_height="match_parent"
-    tools:context=".transference.ReportTabbetActivity">
+    tools:context=".Report.ReportTabbetActivity">
 
     <include
         layout="@layout/app_bar_tabbet"

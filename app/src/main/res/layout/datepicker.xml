@@ -6,6 +6,7 @@
     android:layout_gravity="center"
     android:padding="15dp"
     android:background="@null">
+
     <DatePicker
         android:id="@+id/datePicker"
         android:layout_width="wrap_content"
@@ -22,6 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorGooglePlus"
         android:text="Editar"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"

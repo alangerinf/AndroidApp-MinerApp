@@ -1107,6 +1107,7 @@ drawable design_snackbar_background
 drawable edittext_rounded
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_insert_comment_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_list_add_white_24dp
@@ -1132,6 +1133,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable shape_background_bottom_gradient
 drawable shape_background_top_gradient
+drawable shape_secondary_r15_asd
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1207,9 +1209,8 @@ id beginning
 id blocking
 id bottom
 id bottom_app_bar
-id btnDateEnd
-id btnDateStart
 id btn_aceptar
+id buton_ok
 id buttonCreateAccount
 id buttonForgot
 id buttonGoLogin
@@ -1218,6 +1219,7 @@ id buttonLogInGoogle
 id buttonPanel
 id buttonSingUp
 id cancel_action
+id cardView
 id center
 id center_horizontal
 id center_vertical
@@ -1250,6 +1252,7 @@ id disableHome
 id div1
 id div2
 id divider
+id eTextComent
 id editTextConfirmPassword
 id editTextEmail
 id editTextPassword
@@ -1263,9 +1266,12 @@ id expand_activities_button
 id expanded_menu
 id fBasic_eTextBoss
 id fBasic_eTextEmail
+id fBasic_eTextHoroEnd
+id fBasic_eTextHoroStart
 id fBasic_eTextNumEquipo
 id fBasic_eTextOT
 id fBasic_eTextOpName
+id fBasic_eTextPetroleo
 id fBasic_spnTurno
 id fab
 id fabComent
@@ -1276,7 +1282,13 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
-id floatingActionButton
+id fjobitem_btnDateEnd
+id fjobitem_btnDateStart
+id fjobitem_tViewDateEnd
+id fjobitem_tViewDateStart
+id fjobitem_tViewJob
+id fjobitem_tViewTotalHours
+id fjobs_fabAddJob
 id forever
 id ghost_view
 id gone
@@ -1284,6 +1296,8 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id hour_datePicker1
+id hour_date_btn_aceptar
 id icon
 id icon_group
 id icon_only
@@ -1379,9 +1393,8 @@ id status_bar_latest_event_content
 id stretch
 id submenuarrow
 id submit_area
-id tViewDateEnd
-id tViewDateStart
-id tViewTittle
+id tViewSin
+id tViewTitulo
 id tabMode
 id tabs
 id tag_accessibility_actions
@@ -1398,7 +1411,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView5
 id textViewForgotPassword
 id text_input_password_toggle
 id textinput_counter
@@ -1506,9 +1518,11 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_coment
 layout fragment_report_basics
 layout fragment_report_jobs
 layout fragment_report_jobs_item
+layout hourpicker
 layout layout_scroll_modal
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -1561,6 +1575,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string aceptar
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
@@ -1586,6 +1601,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
 string desde
+string error_add_actividaddes
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
@@ -1615,6 +1631,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string select_job
 string sin_editar
 string status_bar_notification_info_overflow
 string tab_text_1

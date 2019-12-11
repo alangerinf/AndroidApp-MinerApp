@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/colorPrimaryDark"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -177,12 +176,14 @@
                 android:layout_marginTop="@dimen/divider_margin"
                 android:layout_marginBottom="@dimen/divider_margin"
                 android:background="@color/colorDivider" />
+
             <EditText
+                android:id="@+id/fBasic_eTextPetroleo"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
+                android:inputType="numberDecimal"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Petroleo"
-                />
+                android:hint="Petroleo" />
 
             <View
                 android:layout_width="match_parent"
@@ -192,11 +193,12 @@
                 android:background="@color/colorDivider" />
 
             <EditText
+                android:id="@+id/fBasic_eTextHoroStart"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Horometro/Km inicial *"
-                />
+                android:inputType="numberDecimal"
+                android:hint="Horometro/Km inicial *" />
 
             <View
                 android:layout_width="match_parent"
@@ -206,12 +208,16 @@
                 android:background="@color/colorDivider" />
 
             <EditText
+                android:id="@+id/fBasic_eTextHoroEnd"
                 style="@style/EditTextDark"
                 android:layout_width="match_parent"
+                android:inputType="numberDecimal"
                 android:layout_height="@dimen/login_edit_text_height"
-                android:hint="Horometro/ final"
-                />
+                android:hint="Horometro/ final" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
         </LinearLayout>
 
 

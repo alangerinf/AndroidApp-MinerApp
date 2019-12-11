@@ -14,6 +14,7 @@ MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\AlanGer\.gradle\
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\80e8e8415063a81de8b366cf3697726c\play-services-auth-17.0.0\AndroidManifest.xml:17:1-39:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\3cc0965661112b640dae66a010b05836\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-runtime:2.2.0-beta01] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d0761a4f521568e2f220f4302ee4c4c6\room-runtime-2.2.0-beta01\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\270b9afccd0d82854ae00a9df450f950\lifecycle-extensions-2.1.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\db493c2822453035c6bde7ec1998c9e9\firebase-auth-interop-19.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\92276eacf9a0ffa62ded631da6c804de\play-services-auth-api-phone-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\ab2e93589c0af04739309d4d063eedf8\play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
@@ -57,16 +58,18 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\0d787bd8184a5baf543c5885ab7062ca\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\059b418d5c8e52dbec273964781f363d\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\52f870a9a43a19a830d218556185002f\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\1b6981c72a3b1fe9ba4bf68baddccdb0\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\e71e79be63d69adae7dd45bcb66e29af\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\5d7385f3fd9a92a4c017faf18aec47e9\core-runtime-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\28adb362871fe82eb5655d258a927d63\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d45407b8f582233689db7c1bcd2876e5\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6502b6b1146d7865b1be89fcdb32ec9d\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\2089da644c133b5732743c7856bf0b00\lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\9bbbd0282f3a6d684af4755229f7e8b6\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6fbd9710be8844078deff06863875e95\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8cb21e47422f76d76ba0fdc7a3ec946c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\fe757cab230d1266cf8b4af7f723683f\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8d2c2517f0edaf4b2b064707e9e76961\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\f1512e3ace0046ebfc471afd17d1c447\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\62a3daeebf998f1ebdca339b81e953fb\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\9bbbd0282f3a6d684af4755229f7e8b6\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8cb21e47422f76d76ba0fdc7a3ec946c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6fbd9710be8844078deff06863875e95\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 INJECTED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:2:1-50:12
 INJECTED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:2:1-50:12
 INJECTED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:2:1-50:12
@@ -102,6 +105,8 @@ MERGED from [com.google.android.gms:play-services-auth:17.0.0] C:\Users\AlanGer\
 MERGED from [com.google.android.gms:play-services-auth:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\80e8e8415063a81de8b366cf3697726c\play-services-auth-17.0.0\AndroidManifest.xml:22:5-37:19
 MERGED from [androidx.room:room-runtime:2.2.0-beta01] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d0761a4f521568e2f220f4302ee4c4c6\room-runtime-2.2.0-beta01\AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.room:room-runtime:2.2.0-beta01] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d0761a4f521568e2f220f4302ee4c4c6\room-runtime-2.2.0-beta01\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\270b9afccd0d82854ae00a9df450f950\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\270b9afccd0d82854ae00a9df450f950\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\db493c2822453035c6bde7ec1998c9e9\firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\db493c2822453035c6bde7ec1998c9e9\firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\be90f5d040deec398a40892c374215e5\play-services-measurement-api-17.2.1\AndroidManifest.xml:26:5-34:19
@@ -134,6 +139,8 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Alan
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\83cd2e3ec682b054f682675a4845ceb5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\33e4044b3f2121bb3136bcee560286e7\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\33e4044b3f2121bb3136bcee560286e7\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\fe757cab230d1266cf8b4af7f723683f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\fe757cab230d1266cf8b4af7f723683f\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
@@ -160,12 +167,12 @@ ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:
 		ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:17:13-44
 	android:name
 		ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:15:19-53
-activity#com.mat.app3.transference.ReportTabbetActivity
+activity#com.mat.app3.Report.ReportTabbetActivity
 ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:21:9-25:20
 	android:theme
 		ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:22:13-64
 	android:name
-		ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:21:19-68
+		ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:21:19-62
 activity#com.mat.app3.views.PreloaderActivity
 ADDED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:theme
@@ -224,6 +231,8 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\AlanGer\.gradle\c
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\3cc0965661112b640dae66a010b05836\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.2.0-beta01] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d0761a4f521568e2f220f4302ee4c4c6\room-runtime-2.2.0-beta01\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.2.0-beta01] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d0761a4f521568e2f220f4302ee4c4c6\room-runtime-2.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\270b9afccd0d82854ae00a9df450f950\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\270b9afccd0d82854ae00a9df450f950\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\db493c2822453035c6bde7ec1998c9e9\firebase-auth-interop-19.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\db493c2822453035c6bde7ec1998c9e9\firebase-auth-interop-19.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\92276eacf9a0ffa62ded631da6c804de\play-services-auth-api-phone-17.0.0\AndroidManifest.xml:5:5-44
@@ -310,12 +319,22 @@ MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\AlanGer\.gradle\ca
 MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\059b418d5c8e52dbec273964781f363d\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\52f870a9a43a19a830d218556185002f\sqlite-2.0.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\52f870a9a43a19a830d218556185002f\sqlite-2.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\1b6981c72a3b1fe9ba4bf68baddccdb0\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\1b6981c72a3b1fe9ba4bf68baddccdb0\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\e71e79be63d69adae7dd45bcb66e29af\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\e71e79be63d69adae7dd45bcb66e29af\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\5d7385f3fd9a92a4c017faf18aec47e9\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.1] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\5d7385f3fd9a92a4c017faf18aec47e9\core-runtime-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\28adb362871fe82eb5655d258a927d63\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\28adb362871fe82eb5655d258a927d63\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d45407b8f582233689db7c1bcd2876e5\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\d45407b8f582233689db7c1bcd2876e5\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6502b6b1146d7865b1be89fcdb32ec9d\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6502b6b1146d7865b1be89fcdb32ec9d\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\2089da644c133b5732743c7856bf0b00\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\2089da644c133b5732743c7856bf0b00\lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\9bbbd0282f3a6d684af4755229f7e8b6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\9bbbd0282f3a6d684af4755229f7e8b6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6fbd9710be8844078deff06863875e95\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6fbd9710be8844078deff06863875e95\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8cb21e47422f76d76ba0fdc7a3ec946c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8cb21e47422f76d76ba0fdc7a3ec946c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\fe757cab230d1266cf8b4af7f723683f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\fe757cab230d1266cf8b4af7f723683f\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8d2c2517f0edaf4b2b064707e9e76961\interpolator-1.0.0\AndroidManifest.xml:20:5-44
@@ -324,12 +343,6 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\AlanGer\.gradle\
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\f1512e3ace0046ebfc471afd17d1c447\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\62a3daeebf998f1ebdca339b81e953fb\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\62a3daeebf998f1ebdca339b81e953fb\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\9bbbd0282f3a6d684af4755229f7e8b6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\9bbbd0282f3a6d684af4755229f7e8b6\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8cb21e47422f76d76ba0fdc7a3ec946c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8cb21e47422f76d76ba0fdc7a3ec946c\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6fbd9710be8844078deff06863875e95\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\6fbd9710be8844078deff06863875e95\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 INJECTED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\AlanGer\Documents\minerApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -542,3 +555,13 @@ ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AlanG
 		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\83cd2e3ec682b054f682675a4845ceb5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\83cd2e3ec682b054f682675a4845ceb5\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\AlanGer\.gradle\caches\transforms-2\files-2.1\8158851c3fa0642c5d58287dcaa8a3e4\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79

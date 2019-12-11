@@ -3,12 +3,11 @@ package com.mat.app3.views
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import com.mat.app3.R
 import com.mat.app3.Utils.goToActivity
 import com.mat.app3.database.MyDatabase
 import com.mat.app3.database.entities.Report
-import com.mat.app3.transference.ReportTabbetActivity
+import com.mat.app3.Report.ReportTabbetActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

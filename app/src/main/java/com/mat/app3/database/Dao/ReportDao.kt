@@ -12,6 +12,8 @@ interface ReportDao {
     @Update
     fun update(vararg report: Report)
 
+
+
     @Delete
     fun delete(vararg report: Report)
 

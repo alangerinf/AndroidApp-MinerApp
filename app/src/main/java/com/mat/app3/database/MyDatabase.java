@@ -27,7 +27,7 @@ public abstract class MyDatabase extends RoomDatabase {
             synchronized (MyDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            MyDatabase.class, dbName)
+                            MyDatabase.class, dbName).allowMainThreadQueries()
                             .build();
                 }
             }

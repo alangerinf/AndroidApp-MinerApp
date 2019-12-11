@@ -20,6 +20,9 @@
     <string name="sin_editar">Sin Editar</string>
     <string name="hasta">HASTA</string>
     <string name="desde">DESDE</string>
+    <string name="select_job">Seleccione un Trabajo</string>
+    <string name="error_add_actividaddes">Ya no se puede agregar mas Actividades</string>
+    <string name="aceptar">Aceptar</string>
 
 
 </resources>
